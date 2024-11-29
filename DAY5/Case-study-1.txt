@@ -1,0 +1,70 @@
+Based on Past experience,the quality control engineer has estimated
+that the probability of commissioning each project in time
+at a client is 0.9,The Company is planning to commision 5 such
+projects in the forth coming years.
+Find the probability of commisioning
+a. No project in time	=> x=0
+b. Two projects in time  => x=2
+c. Atmost 1 project in time =======> x<=1  
+d. Atleast 2 projects in time	==> [x >= 2]	   
+
+Note: Apply Binomial Distribution Technique.
+p=0.9
+n=5
+p+q=1
+
+q=1-p
+q=1-0.9
+q=0.1
+
+
+b. Two projects in time
+x=2            5-2
+5C (0.9)2 (0.1) 
+  2
+----
+|-> 5!
+    ----     ==>   5 x 4 x 3 
+    (5-2)! 2!      -----------   
+                    3! x 2!         
+                                       
+     10
+     --- X (0.81) x (0.001)  =>  10 X 0.81 X 0.001 => 0.0081
+      1                             		      -------
+
+
+
+c. Atmost 1 project in time =======> x<=1  => p+q=1
+			
+	   p(x=0) + p(x=1)
+x=1	   ======
+----> 0.001 + 5c1(0.9)1 (0.1)4
+              -----------------
+		|
+		5 x 4!
+		-------- => (5)
+		4! 1!
+	=0.001+(5)(0.9)(0.001)
+	
+	=0.001+0.00045
+	=0.00046
+
+
+d. Atleast 2 projects in time
+  x >= 2  -> 2 3 4 5 
+		   |
+		   n=5
+
+  
+p+q = 1
+
+p(x >= 2)
+----------
+ p	
+
+  1 - p(x < 2) <-- failed
+
+ = 1 - [ p(x=0) + p(x=2) ]
+ = 1 - 0.00046
+ = 0.99954
+------------------------------------------
